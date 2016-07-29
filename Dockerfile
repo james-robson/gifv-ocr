@@ -9,6 +9,9 @@ RUN add-apt-repository ppa:ubuntu-lxc/lxd-stable # required for Go
 RUN add-apt-repository ppa:mc3man/trusty-media   # required for ffmpeg
 RUN apt-get update
 
+# Install Tesseract
+RUN apt-get install -y tesseract-ocr
+
 # Install ffmpeg
 RUN apt-get install -y ffmpeg
 

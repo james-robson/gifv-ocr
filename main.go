@@ -1,6 +1,11 @@
 package main
 
-import "os/exec"
+import (
+	"os/exec"
+
+	_ "github.com/otiai10/gosseract"
+	_ "github.com/otiai10/mint"
+)
 
 func main() {
 	splitVideoToFrames()

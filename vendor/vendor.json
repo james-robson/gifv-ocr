@@ -1,0 +1,25 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "ljSnZ+iO5MnVzXBV5ayx9J76FRA=",
+			"path": "github.com/otiai10/gosseract",
+			"revision": "2930c0d0b0a2646d4c7f2a248bf8e0552edf8b41",
+			"revisionTime": "2016-05-31T06:49:11Z"
+		},
+		{
+			"checksumSHA1": "lWr+vSk6vqMnkFtR0QLIaR700yo=",
+			"path": "github.com/otiai10/gosseract/tesseract",
+			"revision": "2930c0d0b0a2646d4c7f2a248bf8e0552edf8b41",
+			"revisionTime": "2016-05-31T06:49:11Z"
+		},
+		{
+			"checksumSHA1": "rruJ3FJylKT+lLqd8XN9FeW+kKM=",
+			"path": "github.com/otiai10/mint",
+			"revision": "f103fe1a471698e9a691c1b515f64fea128a7724",
+			"revisionTime": "2015-12-13T16:04:50Z"
+		}
+	],
+	"rootPath": "gifv-ocr"
+}
