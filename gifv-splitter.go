@@ -1,17 +1,14 @@
 package main
 
-import (
-	"flag"
-	"os"
-	//"image"
-)
+import "os/exec"
 
 func main() {
-	filePath := flag.String("file", "", "Path to the file which must be split")
-	flag.Parse()
-	os.Open(*filePath)
+	splitVideoToFrames()
 }
 
-// func GIFSplitFrames(reader io.Reader) (err error) {
-// 	gif, err := gif.DecodeAll(reader)
-// }
+func splitVideoToFrames() {
+	ffmpegCmd := exec.Command("ffmpeg", "-i", "./examples/test.mp4", "-f", "image2", "-pix_fmt", "bgr24", "/output/test%06d.bmp")
+	if ffmpegCmd.Run() != nil {
+		panic("Error running ffmpeg command")
+	}
+}

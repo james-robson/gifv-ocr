@@ -9,13 +9,23 @@ RUN add-apt-repository ppa:ubuntu-lxc/lxd-stable # required for Go
 RUN add-apt-repository ppa:mc3man/trusty-media   # required for ffmpeg
 RUN apt-get update
 
-# Install Go and export $GOPATH
-RUN mkdir -p /go/src/gifv-ocr && export GOPATH="/go"
-RUN apt-get install -y golang
-
 # Install ffmpeg
 RUN apt-get install -y ffmpeg
 
-ENTRYPOINT ["ffmpeg", "-i", "/go/src/gifv-ocr/examples/test.mp4", "-f", "image2", "-pix_fmt", "bgr24", "/output/test%06d.bmp"]
+# Install Go and export $GOPATH
+RUN apt-get install -y golang
 
-COPY . /go/src/gifv-ocr
+ENV GOPATH /go
+ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
+
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
+
+# Install the Go app and run
+ENV WORKDIR=/go/src/github.com/james-robson/gifv-ocr
+WORKDIR $WORKDIR
+
+COPY . $WORKDIR
+
+RUN go install .
+
+ENTRYPOINT /go/bin/gifv-ocr
