@@ -10,7 +10,7 @@ RUN add-apt-repository ppa:mc3man/trusty-media   # required for ffmpeg
 RUN apt-get update
 
 # Install Tesseract
-RUN apt-get install -y tesseract-ocr
+RUN apt-get install -y libtesseract-dev libleptonica-dev tesseract-ocr 
 
 # Install ffmpeg
 RUN apt-get install -y ffmpeg
