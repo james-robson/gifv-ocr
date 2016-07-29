@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+    <head>
+        <title>This new GIFV format will change Imgur forever...</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="copyright" content="Copyright 2016 Imgur, Inc." />
+        <meta id="viewport" name="viewport" content="width=480, user-scalable=yes" />
+        <link rel="stylesheet" type="text/css" href="//s.imgur.com/min/sharePlayer.css?1469742780" />
+
+        <style type="text/css">
+            #content, #video {
+                width:  480px;
+                height: 200px;
+            }
+
+            #chrome, #progress {
+                width: 480px;
+            }
+        </style>
+
+        <link rel="alternate" type="application/json+oembed" href="http://api.imgur.com/oembed.json?url=http://i.imgur.com/71YvSrA.gifv" title="This new GIFV format will change Imgur forever..." />
+        <link rel="alternate" type="application/xml+oembed" href="http://api.imgur.com/oembed.xml?url=http://i.imgur.com/71YvSrA.gifv" title="This new GIFV format will change Imgur forever..." />
+
+        <link rel="canonical"                 href="http://i.imgur.com/71YvSrA.gifv" />
+
+        <meta property="og:site_name"         content="Imgur" />
+        <meta property="og:title"             content="This new GIFV format will change Imgur forever..." />
+        <meta property="og:type"              content="video.other" />
+                <meta property="og:url"               content="https://i.imgur.com/71YvSrA.mp4" />
+        <meta property="og:image"             content="https://i.imgur.com/71YvSrAh.jpg" />
+        <meta property="og:description"       content="Imgur: The most awesome images on the Internet." />
+        <meta property="og:video:width"       content="480" />
+        <meta property="og:video:height"      content="200" />
+        <meta property="og:video"             content="https://i.imgur.com/71YvSrA.mp4" />
+        <meta property="og:video:secure_url"  content="https://i.imgur.com/71YvSrA.mp4" />
+        <meta property="og:video:type"        content="video/mp4" />
+        
+
+        <meta name="twitter:site"                       content="@imgur" />
+        <meta name="twitter:domain"                     content="imgur.com" />
+        <meta name="twitter:app:id:googleplay"          content="com.imgur.mobile" />
+        <meta name="twitter:card"                       content="player" />
+        <meta name="twitter:title"                      content="This new GIFV format will change Imgur forever..." />
+        <meta name="twitter:description"                content="Imgur: The most awesome images on the Internet." />
+        <meta name="twitter:image"                      content="https://i.imgur.com/71YvSrAh.jpg" />
+        <meta name="twitter:player"                     content="https://i.imgur.com/71YvSrA.gifv?twitter#t" />
+        <meta name="twitter:player:width"               content="480" />
+        <meta name="twitter:player:height"              content="200" />
+        <meta name="twitter:player:stream"              content="https://i.imgur.com/71YvSrA.mp4" />
+        <meta name="twitter:player:stream:content_type" content="video/mp4">
+
+        <!--[if lte IE 8]><script type="text/javascript" src="//s.imgur.com/min/iepoly.js?1469742780"></script>
+<![endif]-->
+    </head>
+    <body id="body">
+        <div id="content">
+            <script type="text/javascript">
+                window.image        = '71YvSrA';
+                window.image_size   = '8145989';
+                window.image_width  = '480';
+                window.image_height = '200';
+                window.cdn_url      = '//i.imgur.com';
+
+                if(navigator.userAgent.match(/Firefox/)) {
+                    document.body.className = document.body.className + ' firefox';
+                }
+            </script>
+            <div class="vid-container">
+                
+                
+                
+                <div class="post-image">
+    
+
+            <div class="video-container">
+            <script type="text/javascript">
+                var videoItem = {
+                    looping:  true,
+                    width:    480,
+                    height:   200,
+                    size:     8145989,
+                    gifUrl:   '//i.imgur.com/71YvSrA.gif',
+                    forceGif: false,
+                    prefer_video: true,
+                    hash:     '71YvSrA'
+                }
+            </script>
+            <video poster="//i.imgur.com/71YvSrAh.jpg" preload="auto" autoplay="autoplay" muted="muted" loop="loop" webkit-playsinline></video>
+            <div class="video-elements">
+                <source src="//i.imgur.com/71YvSrA.mp4" type="video/mp4">
+            </div>
+            <progress value="0" max="100" min="0"></progress>
+            <div class="video-loader"></div>
+            <script id="script71YvSrA" type="text/javascript" src="//s.imgur.com/min/imageViewerInline.js?1469742780"></script>
+
+            <meta itemprop="thumbnailUrl" content="https://i.imgur.com/71YvSrAh.jpg" />
+            <meta itemprop="contentURL" content="https://i.imgur.com/71YvSrA.mp4" />
+            <meta itemprop="embedURL" content="https://i.imgur.com/71YvSrA.gifv" />
+        </div>
+    
+</div>
+
+            </div>
+            <script type="text/javascript">
+            var pixel_url = '//i.imgur.com/imageview.gif?a=71YvSrA&r=' + encodeURIComponent(document.referrer);
+            var pixel = document.createElement('img');
+            pixel.src = pixel_url;
+            </script>
+
+            <div id="chrome">
+                <div class="icon">
+                    <a href="//imgur.com/71YvSrA"><img src="//i.imgur.com/favicon.ico" /></a>
+                </div>
+                <div class="imgur">
+                    <a href="//imgur.com/71YvSrA">Imgur</a>
+                </div>
+                <div class="controls">
+                    <a href="//imgur.com/download/71YvSrA">download</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <script type="text/javascript" src="//s.imgur.com/min/sharePlayer.js?1469742780"></script>
+
+    </body>
+</html>
