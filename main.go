@@ -5,7 +5,7 @@ import (
 	"log"
 	"os/exec"
 
-	gosseract "github.com/otiai10/gosseract"
+	"github.com/otiai10/gosseract"
 	_ "github.com/otiai10/mint"
 )
 
@@ -13,6 +13,8 @@ func main() {
 	err := splitVideoToFrames()
 	if err == nil {
 		extractText()
+	} else {
+		log.Println(err)
 	}
 }
 
@@ -21,7 +23,7 @@ func extractText() {
 	if err1 != nil {
 		log.Println(err1)
 	}
-	extractedText, err2 := client.Src("/output/test000003.bmp").Out()
+	extractedText, err2 := client.Src("/output/test000139.jpg").Out()
 	if err2 != nil {
 		log.Println(err2)
 	}
@@ -29,7 +31,7 @@ func extractText() {
 }
 
 func splitVideoToFrames() error {
-	ffmpegCmd := exec.Command("ffmpeg", "-i", "./examples/test.mp4", "-f", "image2", "-pix_fmt", "bgr24", "/output/test%06d.bmp")
+	ffmpegCmd := exec.Command("ffmpeg", "-i", "./examples/test.mp4", "-qscale:v", "2", "/output/test%06d.jpg")
 	err := ffmpegCmd.Run()
 	return err
 }
